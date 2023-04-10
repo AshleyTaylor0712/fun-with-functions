@@ -83,7 +83,7 @@ function sumArray(sumArr) { //eslint-disable-line
   let sum3 = sum(sumArr[0], sumArr[1])[0];
   let total = sum(sum3, sumArr[2])[0];
   let message5 = `${sumArr} was passed in as an array of numbers, and ${total} is their sum.`;
-  return {total, message5};
+  return [total, message5];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -107,7 +107,7 @@ function multiplyArray(multArr) { //eslint-disable-line
   let times1 = multiply(multArr[0], multArr[1])[0];
   let times2 = multiply(times1, multArr[2])[0];
   let message6 = `The numbers ${multArr} have a product of ${times2}.`;
-  return (times2, message6);
+  return [times2, message6];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
